@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado do Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e9e9e9;
+            padding: 20px;
+        }
+        .resultado {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="resultado">
+    <h2>Membro Cadastrado</h2>
+
+    <p><strong>Nome:</strong> <span id="nome"></span></p>
+    <p><strong>Idade:</strong> <span id="idade"></span></p>
+    <p><strong>Telefone:</strong> <span id="telefone"></span></p>
+    <p><strong>Endereço:</strong> <span id="endereco"></span></p>
+    <p><strong>Função:</strong> <span id="funcao"></span></p>
+</div>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+
+    document.getElementById("nome").textContent = urlParams.get("nome");
+    document.getElementById("idade").textContent = urlParams.get("idade");
+    document.getElementById("telefone").textContent = urlParams.get("telefone");
+    document.getElementById("endereco").textContent = urlParams.get("endereco");
+    document.getElementById("funcao").textContent = urlParams.get("funcao");
+</script>
+
+</body>
+</html>

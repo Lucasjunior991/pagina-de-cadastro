@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Membros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+        button {
+            padding: 10px;
+            width: 100%;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Membros</h2>
+        <img src="" alt="">
+
+        <form action="resultado.html" method="GET">
+            <label>Nome Completo:</label>
+            <input type="text" name="nome" required>
+
+            <label>Idade:</label>
+            <input type="number" name="idade" required>
+
+            <label>Telefone:</label>
+            <input type="text" name="telefone" required>
+
+            <label>Endereço:</label>
+            <input type="text" name="endereco" required>
+
+            <label>Função na Instituição:</label>
+            <select name="funcao">
+                <option>Membro</option>
+                <option>Visitante</option>
+                <option>Diácono</option>
+                <option>Presbítero</option>
+                <option>Pastor</option>
+            </select>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
